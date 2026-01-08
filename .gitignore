@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-electron
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build output
+out
+release
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS
+Thumbs.db
+
+# ========================================
+# 半开源项目 - 核心敏感代码文件
+# ========================================
+
+# 核心解密服务 - 包含微信数据库解密算法
+electron/services/
+
+# 核心资源文件 - 包含关键的DLL和二进制文件
+resources/
+
+# 安装脚本 - 包含安装逻辑
+installer.nsh
+
+# 构建脚本 - 包含构建和发布逻辑
+scripts/add-size-to-yml.js
+
+# 配置文件 - 可能包含敏感配置
+.npmrc
+TODO.md
+package-lock.json
